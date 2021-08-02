@@ -20,7 +20,7 @@ class GrafanaOAuth
     public function auth(string $state): void
     {
         $state = urlencode($state);
-        $url = "http://localhost:3000/login/generic_oauth?state={$state}&code=cc536d98d27750394a87ab9d057016e636a8ac31";
+        $url = "http://172.29.65.193:3000/login/generic_oauth?state={$state}&code=cc536d98d27750394a87ab9d057016e636a8ac31";
         header("Location: {$url}");
     }
 
